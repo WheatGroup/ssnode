@@ -1,6 +1,6 @@
 yum install epel-release -y
 yum install gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel libev-devel -y
-sudo yum install gettext gcc autoconf libtool automake make asciidoc xmlto udns-devel libev-devel git python-pip pcre-devel
+sudo yum install gettext gcc autoconf libtool automake make asciidoc xmlto udns-devel libev-devel git python-pip pcre-devel -y
 sudo pip install flask
 git clone https://github.com/shadowsocks/shadowsocks-libev.git
 cd shadowsocks-libev
