@@ -1,8 +1,11 @@
-sudo yum install gettext gcc autoconf libtool automake make asciidoc xmlto udns-devel libev-devel git python-pip
+yum install epel-release -y
+yum install gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel libev-devel -y
+sudo yum install gettext gcc autoconf libtool automake make asciidoc xmlto udns-devel libev-devel git python-pip pcre-devel
 sudo pip install flask
 git clone https://github.com/shadowsocks/shadowsocks-libev.git
 cd shadowsocks-libev
-git checkout v3.0.5
+git checkout 82edb215950630104175f548e8ef019ab1ba4024
+git checkout -b test1
 git submodule update --init --recursive
 
 # Installation of Libsodium
